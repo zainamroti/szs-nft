@@ -19,7 +19,7 @@ async function main() {
         so ZeeCard here is a factory for instances of our ZeeCard contract.
         in other words -- ZeeCard Factory lets us create new instances of our ZeeCard contract in an abstracted way.
     */
-    const ZeeCard = await hre.ethers.getContractFactory("ZeeCard.sol");
+    const ZeeCard = await hre.ethers.getContractFactory("ZeeCard");
     const zeeCard = await ZeeCard.deploy();
 
     await zeeCard.deployed();

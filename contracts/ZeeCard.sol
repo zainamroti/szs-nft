@@ -9,7 +9,7 @@ contract ZeeCard is ERC721 {
 
     constructor() ERC721("ZeeCard", "ZC") {
         // mint initial NFTs to yourself
-        _mint(msg.sender, 11);
+        _mint(msg.sender, 1);
     }
 
 }
